@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .container
+        {
+            width: 100%;
+            height: 800px;
+            background-image: url(images/hulki-okan-tabak-x3kQTL7yw30-unsplash.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .fillup
+        {
+            margin-top: 50px;
+            float: left;
+            width: 35%;
+            height: 600px;
+            background-color:white;
+            margin-left: 25px;
+        }
+        .display
+        {
+            margin-top: 50px;
+            background-color:white;
+            float: right;
+            width: 50%;
+            height: 600px;
+            margin-right: 25px;
+            
+        }
+        .in1
+        {
+            display: flex;
+            flex: 1;
+            margin-top: 20px;
+            width: 70%;
+            height: 20px;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+        .submit1
+        {
+            margin-top: 50px;
+            margin-left: 20px;
+            width: 70px;
+            height: 25px;
+            font-size: 20px;
+        }
+        .submit2
+        {
+            margin-top: 50px;
+            margin-left: 20px;
+            width: 70px;
+            height: 25px;
+            font-size: 20px;   
+        }
+        .table
+        {
+            margin-top: 25px;
+            margin-left: 35px;
+            color: #154360;
+            width: 90%;
+            font-size: 20px;
+            border: 2px solid; 
+        }
+        #dis1
+        {
+            color: #E74C3C;   
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="fillup">
+                <h1 style="text-align: center; margin-top: 10px;">Login / Credentials🪪</h1>
+                <div>
+                    <form onsubmit="return regf(event)">
+                        <input type="text" class="in1" id="ab1" placeholder="First Name" required>
+                        <input type="text" class="in1" id="ab2" placeholder="Middle Name" required>
+                        <input type="text" class="in1" id="ab3" placeholder="Last Name" required>
+                        <input type="text" class="in1" id="ab4" placeholder="Mobile Number" required>
+                        <input type="text" class="in1" id="ab5" placeholder="Email_id" required>
+                        <input type="password" class="in1" id="ab6" placeholder="Password" required>
+                        <input type="password" class="in1" id="ab7" placeholder="Confirm Password" required>
+                        <button type="submit" class="submit1" id="ab8">Submit</button>
+                        <input type="reset" class="submit2" onclick="clear(event)">
+                    </form>                    
+                </div>
+            </div>
+            <div class="display">
+                <table class="table">
+                    <h1 style="margin-left: 250px; margin-top: 10px;">Display Section🖥️</h1>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Middel Name</th>
+                        <th>Last Name</th>
+                        <th>Mobile Number</th>
+                        <th>Email id</th>
+                        <th>Password</th>
+                    </tr>
+                    <tr id="dis1">
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>  
+</body>
+<script>
+    function regf(event)
+{
+    event.preventDefault() 
+
+    var fname = document.getElementById("ab1").value
+    var mname = document.getElementById("ab2").value
+    var lname = document.getElementById("ab3").value
+    var mobile = document.getElementById("ab4").value
+    var email = document.getElementById("ab5").value
+    var password = document.getElementById("ab6").value
+    var cpassword = document.getElementById("ab7").value
+
+
+    var monotest = /^[6-9]\d{9}$/;
+    var emailvali=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var passvali=/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+
+    if (!monotest.test(mobile))
+    {
+        alert("Please Enter  Correct Mobile Number")
+        return false;
+    }
+    else if(!emailvali.test(email))
+    {
+        alert("Please Enter Correct Email Addres ");
+        return false;
+    }
+    else if(!passvali.test(password))
+    {
+        alert(" Password Must be Minimum eight characters, at least one letter, one number and one special character");
+        return false
+    }
+    else if(password!=cpassword)
+    {
+        alert("password did not match");
+        return false
+    }
+
+
+    var dis2 = document.getElementById("dis1")
+
+    var cr1 = document.createElement("td")
+    var cr2 = document.createElement("td")
+    var cr3 = document.createElement("td")
+    var cr4 = document.createElement("td")
+    var cr5 = document.createElement("td")
+    var cr6 = document.createElement("td")
+
+    cr1.innerText = fname;
+    cr2.innerText = mname;
+    cr3.innerText = lname;
+    cr4.innerText = mobile;
+    cr5.innerText = email;
+    cr6.innerText = password;
+
+    dis2.appendChild(cr1);
+    dis2.appendChild(cr2);
+    dis2.appendChild(cr3);
+    dis2.appendChild(cr4);
+    dis2.appendChild(cr5);
+    dis2.appendChild(cr6);
+}
+function clear(event)
+{
+    event.preventDefault()
+    
+    document.getElementById("ab1").value = "";
+    document.getElementById("ab2").value = "";
+    document.getElementById("ab3").value = "";
+    document.getElementById("ab4").value = "";
+    document.getElementById("ab5").value = "";
+    document.getElementById("ab6").value = "";
+    document.getElementById("ab7").value = "";
+
+}
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #container
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+    function fetchdata()
+    {
+        fetch("https://fakestoreapi.com/products")
+        .then((res) => res.json())
+        .then((data) => cardlist(data))
+        .catch((err) => console.log(err))
+    }
+
+    fetchdata()
+
+    function scrad(image,price,category,description)
+    {var card = 
+        `
+         <div>
+        <img src="${image}" alt="" height="200" width="400">
+        <h3>${category}</h3>
+        <h3>${price}</h3>
+        <p>${description}</p>
+        </div>
+        `
+
+        return card
+    }
+
+    function cardlist(data)
+    {
+        var store = data.map((el) => scrad(el.image,el.price,el.category,el.description));
+        document.getElementById("container").innerHTML = store.join("")
+    }
+    
+</script>
+</html>

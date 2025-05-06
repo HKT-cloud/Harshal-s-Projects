@@ -1,0 +1,46 @@
+{
+  "pitches": [
+    {
+      "image": "https://static.nike.com/a/images/w_1280,q_auto,f_auto/6c2e20d9-a361-40a5-b69f-1d2c083b1747/nike-sb-dunk-low-pro-red-stardust-and-monarch-fhj4135-600-release-date.jpg",
+      "title": "Red Stardust and Monarch",
+      "price": "19,999",
+      "description": "Balanced, refined and unapologetically different—this Nike SB Dunk explores the colour wheel. The Red Stardust suede upper pulses beneath suede Monarch overlays, as Neutral Olive Swoosh logos lend an earthy hue to the softened rustic aesthetic. True to form, this rebellious skateboarding icon comes complete with a padded and low-cut collar.",
+      "id": "1"
+    },
+    {
+      "id": "00f9",
+      "image": "https://static.nike.com/a/images/t_prod_pc/w_960,c_limit,q_auto,f_auto/444f1053-ee7f-4009-badc-58a8a847caba/air-force-1-low-retro-white-and-baroque-brown-hj4323-100-release-date.jpg",
+      "title": "Air Force 1 Low Retro",
+      "description": "ntroducing first popped potato chips of india. Not Fried, Not Baked with 50% Less Fat. Enjoy Lip-Smacking Snacks Guilt-Free with Tagz Popped Potato Chips With 50% Less Fats. Premium Chocolate Cookies. No Artificial Flavors.",
+      "price": "12,999"
+    },
+    {
+      "id": "2",
+      "image": "https://static.nike.com/a/images/w_1280,q_auto,f_auto/73a3d60f-abaa-4317-9eb2-e75e70e33a0d/air-jordan-1-low-sail-and-golden-harvest-cz0790-107-release-date.jpg",
+      "title": "Sail and Golden Harvest",
+      "description": "The AJ1 is the origin of two icons: MJ and the release of his first signature shoe. And this one nods back to his early days. The leather and nubuck upper comes dressed in Sail and Golden Harvest, drawing inspiration from the 'fit Jordan wore during his Rookie of the Year acceptance speech. Back then, the Jordan legacy was just taking flight. After 40 years, it hasn't come down.",
+      "price": "20"
+    },
+    {
+      "id": "4",
+      "image": "https://static.nike.com/a/images/t_prod_pc/w_960,c_limit,q_auto,f_auto/cc18e15b-a304-4203-bf59-05bebc09e9c0/air-jordan-1-x-union-varsity-red-and-shadow-grey-hv8563-600-release-date.jpg",
+      "title": "Varsity Red and Shadow Grey",
+      "description": "The partnership with Jordan and Union continues—and lucky for us, so does the fusion of legendary colorways. And this one's special. We took the coveted Chicago lower and stitched on the Shadow collar to create a remixed look rooted in heritage. Made of crisp leather, it combines vintage-inspired details like a Nike Air tongue label and MJ’s signature Wings logo with a UN/LA woven label that nods to the alliance. Building on legacy, this masterful AJ1 celebrates two MJ originals—and the Union twist? It only makes it better.",
+      "price": "MRP : ₹ 18 395.00"
+    },
+    {
+      "id": "5",
+      "image": "https://static.nike.com/a/images/w_1280,q_auto,f_auto/748a53da-9dc9-40cf-967e-794131a37180/women-s-air-jordan-1-high-og-rare-air-db4612-100-release-date.jpg",
+      "title": "Women's Air Jordan 1 High OG",
+      "description": "We all gotta start somewhere—even the greatest of all time. Things got crazy in the sneaker lab back in the day with imperfect AJ1 samples, incorrect logo placements, odd seams and out-of-place packaging. Mistakes turned into marks of rarity and unforgettable must-haves. We call that Rare Air.",
+      "price": "MRP : ₹ 16 995.00"
+    },
+    {
+      "id": "b69c",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRfoRqGbqyEY5MANSgUHMwrn8Upqtf-9-qOjDg2dOuqBUK3_YF0bfxYfpfDker8OO34CRckHvuVvGPbqSJQdW502f5CYdcgeSPRZ2lvnSLx24dL&usqp=CAc",
+      "tittle": "MEXICO 66 SLIP-ON UNISEX ",
+      "price": "M.R.P.:  ₹10,500.00 Inclusive of all taxes",
+      "description": "Invest in a timeless classic with the unisex MEXICO 66® SLIP-ON heritage lifestyle shoe by ONITSUKA TIGER. Fusing retro design with fresh touches, this contemporary shoe is an update of the MEXICO 66® model, the brand's"
+    }
+  ]
+}
